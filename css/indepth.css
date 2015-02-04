@@ -67,7 +67,7 @@
 .indepth_page_content .indepth_text .f_letter{
 	font-size: 60px;
 	float: left;
-	line-height: 50px;
+	line-height: 45px;
 	margin-right: 2px;
 	font-weight: 700;
 }
@@ -93,7 +93,7 @@
 
 #indepth_cover .indepth_parallax_back{
 	background-image: url(../images/portada.jpg);
-	background-position: right top;
+	background-position: center center;
 	background-color: white;
 	background-size: cover;
 }
@@ -101,10 +101,11 @@
 #indepth_cover .indepth_cover_back_body{
 	position: absolute;
 	bottom: 15%;
-	background:#2E7294;
+	background:#6d1925;
 	padding: 20px 0;
 	padding: 20px 35px;
 	margin-left: 2%;
+	right: 2%;
 }
 
 #indepth_cover .indepth_title{
@@ -177,6 +178,8 @@
 	text-align:justify; /* ajustar alineacion (justify, left, right o center) */
 	font-weight: 400;
 	font-size: 1em;
+	max-width: 700px;
+	margin: auto;
 }
 
 .indepth_page_infografia{
@@ -580,7 +583,6 @@ color: #878787;
 
 	.indepth_pages{
 		width: 100%;
-		max-width: 800px;	
 		min-width: 0px;
 	}
 
@@ -601,8 +603,8 @@ color: #878787;
 	}
 	
 	#indepth_cover .indepth_parallax_back{
-		background-size: auto 800px;
-		background-position: 50% 0;
+		background-size: auto 600px;
+		background-position: center top;
 	}
 	
 	.indepth_page_infografia .indepth_page_body{
@@ -651,12 +653,17 @@ color: #878787;
 	
 	
 	#indepth_break_2 .indepth_parallax_back{
-		background-position: 30% 50%;
+		background-position: 55% 50%;
 	}
 
 
 	#indepth_break_1 .indepth_parallax_back{
-		background-position: 80% 50%;
+		background-position: 55% 50%;
+	}
+	
+	#indepth_cover .indepth_parallax_back{
+		background-size: auto 800px;
+		background-position: center top;
 	}
 
 
@@ -851,12 +858,18 @@ color: #878787;
 	padding: 10px 15px;
 	margin-left: 20px;
 	margin: auto;
+	
 }
 
 
 	
 	#indepth_cover .indepth_cover_back_body{
 	}
+	
+	#indepth_cover .indepth_parallax_back {
+background-size: 830px;
+background-position: 50% top;
+}
 	
 	.indepth_break {
 		height: auto;
@@ -941,6 +954,11 @@ width: 95%;
 max-width: 320px;
 font-size: 20px;
 }
+
+#indepth_cover .indepth_parallax_back {
+background-size: 700px;
+background-position: 50% top;
+}
 	
 }
 
@@ -1008,14 +1026,4 @@ height: 300px;
 	
 }
 
-@media screen and (max-height: 1024px) and (max-width: 768px){
-	.indepth_parallax_back{
-		background-attachment: initial;
-	}
 
-	
-	#indepth_cover .indepth_parallax_back{
-		background-size: auto 80%;
-		background-position: 50% 50%;
-	}
-}
